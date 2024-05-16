@@ -1,0 +1,180 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background:url(/Registro&Login/img/fondoRegLog.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-family: Goudy Old Style;
+    opacity: 0.9;
+}
+
+.container-form {
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, -1);
+    height: 23rem;
+    max-width: 600px;
+    transition: all 1s ease;
+    padding-top: 20px;
+    margin: 10px;
+    margin-right: 480px;
+}
+
+
+
+.information, .form-information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.information {
+    width: 40%;
+    background-color: #f89b4c;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 20px;
+    padding-top: 0; /* Eliminar padding superior */
+}
+
+.info-childs {
+    width: 100%;
+    padding: 0 30px;
+}
+
+.info-childs h2 {
+    font-size: 1.5rem;
+    color: #070707;
+    margin: 0; /* Eliminar margen superior e inferior */
+    padding-top: 10px; /* Añadir padding superior para ajustar la posición */
+}
+
+.info-childs p {
+    margin: 10px 0;
+    color: #070707;
+    font-size: 1rem;
+}
+
+.info-childs input {
+    background-color: #FFFFFF;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #070707;
+    cursor: pointer;
+    transition: background-color .3s ease;
+    margin-top: 20px;
+}
+
+.info-childs input:hover {
+    background-color: #FAF3E0;
+    color: #000000;
+}
+
+.form-information {
+    width: 60%;
+    background-color: #FAF3E0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 20px;
+}
+
+.form-information-childs {
+    padding: 0 30px;
+}
+
+.form-information-childs h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.form-information-childs p {
+    color: #FFFFFF;
+}
+
+.form {
+    margin: 30px 0 0 0;
+}
+
+.form label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form label input {
+    width: 100%;
+    padding: 10px;
+    background-color: #FFFFFF;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #333;
+}
+
+.form button[type="submit"] {
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color .3s ease;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form button[type="submit"]:hover {
+    background-color: #f89b4c;
+}
+
+.hide {
+    position: absolute;
+    transform: translateY(-300%);
+}
+
+@media screen and (max-width:750px) {
+    html {
+        font-size: 12px;
+    } 
+}
+
+@media screen and (max-width:580px) {
+    html {
+        font-size: 10px;
+    } 
+
+    .container-form {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .information {
+        width: 100%;
+        padding: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .form-information {
+        width: 100%;
+        padding: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0px;
+    }
+}
